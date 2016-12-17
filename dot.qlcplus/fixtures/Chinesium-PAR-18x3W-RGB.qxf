@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE FixtureDefinition>
+<FixtureDefinition xmlns="http://www.qlcplus.org/FixtureDefinition">
+ <Creator>
+  <Name>Q Light Controller Plus</Name>
+  <Version>4.10.5</Version>
+  <Author>Paul Hedderly</Author>
+ </Creator>
+ <Manufacturer>Chinesium</Manufacturer>
+ <Model>PAR 18x3W RGB</Model>
+ <Type>Color Changer</Type>
+ <Channel Name="Master">
+  <Group Byte="0">Intensity</Group>
+ </Channel>
+ <Channel Name="Red">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Red</Colour>
+ </Channel>
+ <Channel Name="Green">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Green</Colour>
+ </Channel>
+ <Channel Name="Blue">
+  <Group Byte="0">Intensity</Group>
+  <Colour>Blue</Colour>
+ </Channel>
+ <Channel Name="Strobe">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Channel Name="Function">
+  <Group Byte="0">Effect</Group>
+ </Channel>
+ <Mode Name="6 Channel">
+  <Physical>
+   <Bulb Type="LED" Lumens="4200" ColourTemperature="0"/>
+   <Dimensions Weight="1.4" Width="140" Height="190" Depth="190"/>
+   <Lens Name="Other" DegreesMin="0" DegreesMax="0"/>
+   <Focus Type="Fixed" PanMax="0" TiltMax="0"/>
+   <Technical PowerConsumption="60" DmxConnector="3-pin"/>
+  </Physical>
+  <Channel Number="0">Master</Channel>
+  <Channel Number="1">Red</Channel>
+  <Channel Number="2">Green</Channel>
+  <Channel Number="3">Blue</Channel>
+  <Channel Number="4">Strobe</Channel>
+  <Channel Number="5">Function</Channel>
+ </Mode>
+</FixtureDefinition>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Workspace>
-<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="SimpleDesk">
+<Workspace xmlns="http://www.qlcplus.org/Workspace" CurrentWindow="FunctionManager">
  <Creator>
   <Name>Q Light Controller Plus</Name>
   <Version>4.10.5</Version>
@@ -317,19 +317,21 @@
    <Head X="0" Y="0" Fixture="0">0</Head>
    <Head X="1" Y="0" Fixture="1">0</Head>
   </FixtureGroup>
-  <ChannelsGroup ID="0" Name="12mini all" Value="0">0,3,0,4,0,5,0,6,0,7,1,3,1,4,1,5,1,6,1,7</ChannelsGroup>
+  <ChannelsGroup ID="9" Name="All-Intensity" Value="0">0,3,1,3,2,0,3,0,4,5,5,5,22,0,23,0</ChannelsGroup>
+  <ChannelsGroup ID="10" Name="All-Red" Value="0">0,4,1,4,2,2,3,1,4,6,5,6,22,1,23,1</ChannelsGroup>
+  <ChannelsGroup ID="11" Name="All-Blue" Value="0">0,6,1,6,2,4,3,3,4,8,5,8,22,3,23,3</ChannelsGroup>
+  <ChannelsGroup ID="12" Name="All-Green" Value="0">0,5,1,5,2,3,3,2,4,7,5,7,22,2,23,2</ChannelsGroup>
+  <ChannelsGroup ID="14" Name="All-White" Value="0">0,7,1,7,4,9,5,9</ChannelsGroup>
+  <ChannelsGroup ID="15" Name="All-Amber" Value="0">2,5,3,4,4,10,5,10</ChannelsGroup>
   <ChannelsGroup ID="1" Name="DS-All" Value="0">6,0,7,0,8,0,9,0,10,0,11,0,12,0,13,0,14,0,15,0,16,0,17,0,18,0,19,0,20,0,21,0</ChannelsGroup>
+  <ChannelsGroup ID="7" Name="75PAN-Master" Value="0">4,5,5,5</ChannelsGroup>
   <ChannelsGroup ID="2" Name="75PAN-Red" Value="0">4,6,5,6</ChannelsGroup>
   <ChannelsGroup ID="3" Name="75PAN-Blue" Value="0">4,8,5,8</ChannelsGroup>
   <ChannelsGroup ID="4" Name="75PAN-Green" Value="0">4,7,5,7</ChannelsGroup>
   <ChannelsGroup ID="5" Name="75PAN-White" Value="0">4,9,5,9</ChannelsGroup>
   <ChannelsGroup ID="6" Name="75PAN-Amber" Value="0">4,10,5,10</ChannelsGroup>
-  <ChannelsGroup ID="7" Name="75PAN-Master" Value="0">4,5,5,5</ChannelsGroup>
-  <ChannelsGroup ID="8" Name="75PAN-PanTilt" Value="0">4,0,4,1,4,2,4,3,5,0,5,1,5,2,5,3</ChannelsGroup>
-  <ChannelsGroup ID="9" Name="All-Intensity" Value="0">0,3,1,3,2,0,3,0,4,5,5,5,22,0,23,0</ChannelsGroup>
-  <ChannelsGroup ID="10" Name="All-Red" Value="0">0,4,1,4,2,2,3,1,4,6,5,6,22,1,23,1</ChannelsGroup>
-  <ChannelsGroup ID="11" Name="All-Blue" Value="0">0,6,1,6,2,4,3,3,4,8,5,8,22,3,23,3</ChannelsGroup>
-  <ChannelsGroup ID="12" Name="All-Green" Value="0">0,5,1,5,2,3,3,2,4,7,5,7,22,2,23,2</ChannelsGroup>
+  <ChannelsGroup ID="8" Name="75PAN-Pan" Value="0">4,0,5,0</ChannelsGroup>
+  <ChannelsGroup ID="13" Name="75PAN-Tilt" Value="0">4,2,5,2</ChannelsGroup>
   <Function ID="0" Type="Scene" Name="red">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
    <FixtureVal ID="0">0,0,1,0,2,0,3,255,4,175,5,0,6,0,7,0</FixtureVal>
@@ -556,15 +558,15 @@
   </Function>
   <Function ID="43" Type="Scene" Name="All-Red">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>2,0</ChannelGroupsVal>
-   <FixtureVal ID="0">0,0,1,0,2,0,3,255,4,255,5,0,6,0,7,0</FixtureVal>
-   <FixtureVal ID="1">0,0,1,0,2,0,3,0,4,236,5,0,6,0,7,0</FixtureVal>
-   <FixtureVal ID="2">0,249,1,0,2,255,3,0,4,0,5,0,6,0</FixtureVal>
-   <FixtureVal ID="3">0,253,1,255,2,0,3,0,4,0,5,0</FixtureVal>
-   <FixtureVal ID="4">0,0,1,0,2,0,3,0,4,0,5,255,6,255,7,0</FixtureVal>
-   <FixtureVal ID="5">0,0,1,0,2,0,3,0,4,0,5,255,6,255,7,0</FixtureVal>
-   <FixtureVal ID="22">0,255,1,255,2,0,3,0,4,0,5,0</FixtureVal>
-   <FixtureVal ID="23">0,0,1,255,2,0,3,0,4,0,5,0</FixtureVal>
+   <ChannelGroupsVal>9,255,10,255</ChannelGroupsVal>
+   <FixtureVal ID="0">3,255,4,255</FixtureVal>
+   <FixtureVal ID="1">3,255,4,255</FixtureVal>
+   <FixtureVal ID="2">0,255,2,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255</FixtureVal>
+   <FixtureVal ID="4">5,255,6,255</FixtureVal>
+   <FixtureVal ID="5">5,255,6,255</FixtureVal>
+   <FixtureVal ID="22">0,255,1,255</FixtureVal>
+   <FixtureVal ID="23">0,255,1,255</FixtureVal>
   </Function>
   <Function ID="44" Type="Scene" Name="Narators L">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
@@ -597,27 +599,61 @@
   </Function>
   <Function ID="51" Type="Scene" Name="All-Blue">
    <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-   <ChannelGroupsVal>3,255,9,255</ChannelGroupsVal>
-   <FixtureVal ID="0">3,255</FixtureVal>
-   <FixtureVal ID="1">3,255</FixtureVal>
-   <FixtureVal ID="2">0,255</FixtureVal>
-   <FixtureVal ID="3">0,255</FixtureVal>
+   <ChannelGroupsVal>9,255,11,255</ChannelGroupsVal>
+   <FixtureVal ID="0">3,255,6,255</FixtureVal>
+   <FixtureVal ID="1">3,255,6,255</FixtureVal>
+   <FixtureVal ID="2">0,255,4,255</FixtureVal>
+   <FixtureVal ID="3">0,255,3,255</FixtureVal>
    <FixtureVal ID="4">5,255,8,255</FixtureVal>
    <FixtureVal ID="5">5,255,8,255</FixtureVal>
-   <FixtureVal ID="22">0,255</FixtureVal>
-   <FixtureVal ID="23">0,255</FixtureVal>
+   <FixtureVal ID="22">0,255,3,255</FixtureVal>
+   <FixtureVal ID="23">0,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="52" Type="Scene" Name="All-White">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>9,255,10,255,11,255,12,255,14,255,15,255</ChannelGroupsVal>
+   <FixtureVal ID="0">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="1">3,255,4,255,5,255,6,255,7,255</FixtureVal>
+   <FixtureVal ID="2">0,255,2,255,3,255,4,255,5,255</FixtureVal>
+   <FixtureVal ID="3">0,255,1,255,2,255,3,255,4,255</FixtureVal>
+   <FixtureVal ID="4">5,255,6,255,7,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="5">5,255,6,255,7,255,8,255,9,255,10,255</FixtureVal>
+   <FixtureVal ID="22">0,255,1,255,2,255,3,255</FixtureVal>
+   <FixtureVal ID="23">0,255,1,255,2,255,3,255</FixtureVal>
+  </Function>
+  <Function ID="53" Type="Scene" Name="All-Green">
+   <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+   <ChannelGroupsVal>9,255,12,255</ChannelGroupsVal>
+   <FixtureVal ID="0">3,255,5,255</FixtureVal>
+   <FixtureVal ID="1">3,255,5,255</FixtureVal>
+   <FixtureVal ID="2">0,255,3,255</FixtureVal>
+   <FixtureVal ID="3">0,255,2,255</FixtureVal>
+   <FixtureVal ID="4">5,255,7,255</FixtureVal>
+   <FixtureVal ID="5">5,255,7,255</FixtureVal>
+   <FixtureVal ID="22">0,255,2,255</FixtureVal>
+   <FixtureVal ID="23">0,255,2,255</FixtureVal>
+  </Function>
+  <Function ID="54" Type="Chaser" Name="New Chaser 54">
+   <Speed FadeIn="2000" FadeOut="2000" Duration="6000"/>
+   <Direction>Forward</Direction>
+   <RunOrder>PingPong</RunOrder>
+   <SpeedModes FadeIn="Common" FadeOut="Common" Duration="Common"/>
+   <Step Number="0" FadeIn="0" Hold="0" FadeOut="0">51</Step>
+   <Step Number="1" FadeIn="0" Hold="0" FadeOut="0">53</Step>
+   <Step Number="2" FadeIn="0" Hold="0" FadeOut="0">43</Step>
+   <Step Number="3" FadeIn="0" Hold="0" FadeOut="0">52</Step>
   </Function>
   <Monitor DisplayMode="1" ShowLabels="1">
    <Font>Arial,12,-1,5,50,0,0,0,0,0</Font>
    <ChannelStyle>1</ChannelStyle>
    <ValueStyle>0</ValueStyle>
    <Grid Width="16" Height="10" Units="1"/>
-   <FxItem ID="5" XPos="5275.94" YPos="1313.54"/>
-   <FxItem ID="4" XPos="-1095.83" YPos="1422.4"/>
    <FxItem ID="1" XPos="1596.73" YPos="1189.4"/>
    <FxItem ID="0" XPos="1161.29" YPos="1198.07"/>
    <FxItem ID="3" XPos="261.025" YPos="1234.33"/>
    <FxItem ID="2" XPos="604.971" YPos="1238.27"/>
+   <FxItem ID="5" XPos="5275.94" YPos="1313.54"/>
+   <FxItem ID="4" XPos="-1095.83" YPos="1422.4"/>
   </Monitor>
  </Engine>
  <VirtualConsole>
@@ -1622,81 +1658,62 @@
  </VirtualConsole>
  <SimpleDesk>
   <Engine>
-   <CueStack ID="7">
-    <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
-    <Cue Name="Cue 1">
-     <Value Channel="5">158</Value>
-     <Value Channel="4">208</Value>
-     <Value Channel="6">186</Value>
-     <Value Channel="3">156</Value>
-     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-    </Cue>
-    <Cue Name="Cue 2">
-     <Value Channel="5">255</Value>
-     <Value Channel="4">255</Value>
-     <Value Channel="7">255</Value>
-     <Value Channel="6">255</Value>
-     <Value Channel="3">255</Value>
-     <Value Channel="2">0</Value>
-     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
-    </Cue>
-   </CueStack>
    <CueStack ID="1">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 1">
+     <Value Channel="3">255</Value>
+     <Value Channel="2">0</Value>
      <Value Channel="5">20</Value>
      <Value Channel="4">255</Value>
      <Value Channel="7">255</Value>
      <Value Channel="6">27</Value>
-     <Value Channel="3">255</Value>
-     <Value Channel="2">0</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
    <CueStack ID="0">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 1">
+     <Value Channel="3">156</Value>
      <Value Channel="5">34</Value>
      <Value Channel="4">208</Value>
      <Value Channel="6">218</Value>
-     <Value Channel="3">156</Value>
      <Speed FadeIn="4185" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 2">
+     <Value Channel="3">255</Value>
+     <Value Channel="2">0</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="7">255</Value>
      <Value Channel="6">255</Value>
-     <Value Channel="3">255</Value>
-     <Value Channel="2">0</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
    <CueStack ID="3">
     <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
     <Cue Name="Cue 2">
+     <Value Channel="3">251</Value>
      <Value Channel="5">0</Value>
      <Value Channel="4">0</Value>
      <Value Channel="6">255</Value>
-     <Value Channel="3">251</Value>
      <Speed FadeIn="1375" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 3">
+     <Value Channel="3">0</Value>
      <Value Channel="5">0</Value>
      <Value Channel="4">0</Value>
      <Value Channel="6">0</Value>
-     <Value Channel="3">0</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 4">
+     <Value Channel="3">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">0</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="5000" FadeOut="3000" Duration="2000"/>
     </Cue>
     <Cue Name="Cue 5">
-     <Value Channel="4">0</Value>
      <Value Channel="3">255</Value>
+     <Value Channel="4">0</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
@@ -1707,158 +1724,177 @@
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 2">
-     <Value Channel="4">255</Value>
      <Value Channel="3">27</Value>
+     <Value Channel="4">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 3">
-     <Value Channel="4">255</Value>
      <Value Channel="3">61</Value>
+     <Value Channel="4">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 4">
+     <Value Channel="3">61</Value>
      <Value Channel="5">55</Value>
      <Value Channel="4">255</Value>
-     <Value Channel="3">61</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 5">
+     <Value Channel="3">95</Value>
      <Value Channel="5">55</Value>
      <Value Channel="4">255</Value>
-     <Value Channel="3">95</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 6">
+     <Value Channel="3">95</Value>
      <Value Channel="5">55</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">86</Value>
-     <Value Channel="3">95</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 7">
+     <Value Channel="3">133</Value>
      <Value Channel="5">55</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">86</Value>
-     <Value Channel="3">133</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 8">
+     <Value Channel="3">133</Value>
      <Value Channel="5">165</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">86</Value>
-     <Value Channel="3">133</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 9">
+     <Value Channel="3">133</Value>
      <Value Channel="5">165</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">195</Value>
-     <Value Channel="3">133</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 10">
+     <Value Channel="3">186</Value>
      <Value Channel="5">165</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">195</Value>
-     <Value Channel="3">186</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 11">
+     <Value Channel="3">186</Value>
      <Value Channel="5">222</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">195</Value>
-     <Value Channel="3">186</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 12">
+     <Value Channel="3">186</Value>
      <Value Channel="5">222</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">237</Value>
-     <Value Channel="3">186</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 13">
+     <Value Channel="3">222</Value>
      <Value Channel="5">222</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">237</Value>
-     <Value Channel="3">222</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 14">
+     <Value Channel="3">241</Value>
      <Value Channel="5">222</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">237</Value>
-     <Value Channel="3">241</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 15">
+     <Value Channel="3">255</Value>
      <Value Channel="5">250</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">237</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 16">
+     <Value Channel="3">255</Value>
      <Value Channel="5">250</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">255</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 17">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">36</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 18">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">77</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 19">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">121</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 20">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">156</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 21">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">185</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 22">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">211</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 23">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">231</Value>
-     <Value Channel="3">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
     <Cue Name="Cue 24">
+     <Value Channel="3">255</Value>
      <Value Channel="5">255</Value>
      <Value Channel="4">255</Value>
      <Value Channel="6">255</Value>
+     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+    </Cue>
+   </CueStack>
+   <CueStack ID="7">
+    <Speed FadeIn="0" FadeOut="0" Duration="4294967295"/>
+    <Cue Name="Cue 1">
+     <Value Channel="3">156</Value>
+     <Value Channel="5">158</Value>
+     <Value Channel="4">208</Value>
+     <Value Channel="6">186</Value>
+     <Speed FadeIn="0" FadeOut="0" Duration="0"/>
+    </Cue>
+    <Cue Name="Cue 2">
      <Value Channel="3">255</Value>
+     <Value Channel="2">0</Value>
+     <Value Channel="5">255</Value>
+     <Value Channel="4">255</Value>
+     <Value Channel="7">255</Value>
+     <Value Channel="6">255</Value>
      <Speed FadeIn="0" FadeOut="0" Duration="0"/>
     </Cue>
    </CueStack>
